@@ -1,4 +1,4 @@
-# desafio-1
+# desafio-1 Frontend Mentor
 Estudo de CSS.
 
 - Usando display flex;
