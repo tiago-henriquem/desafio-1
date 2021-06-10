@@ -142,6 +142,7 @@ class="btn btn-<classificação - sedan, suv e luxury>"*/
         align-items: center;
         /*justify-content: center - não coloquei porque pareceu não estar centralizado -> ????*/
         margin-top: 20%;
+        margin-bottom: 20%;
     }
 
     .sedan, 
@@ -162,6 +163,12 @@ class="btn btn-<classificação - sedan, suv e luxury>"*/
     {
         border-top-left-radius: 0.5rem;
         border-bottom-left-radius: 0.5rem;
+    }
+    
+    .luxury
+    {
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
     }
 
     .sedan img, h2
