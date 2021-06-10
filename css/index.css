@@ -1,0 +1,181 @@
+/*Imports das fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+/*Especificação "responsividade": width=375px*/
+@media (min-width: 375px)
+{
+    /*Reset*/
+    *
+    {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 15px;
+    }
+
+    h2
+    {
+        font-family: 'Big Shoulders Display', cursive;
+        font-weight: 700;
+        font-size: 3em;
+        color: #FFFFFF;
+    }
+    
+    p
+    {
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 400;
+        color: hsla(0, 0%, 100%, 0.75);
+    }
+
+    body
+    {
+        background-color: hsl(0, 0%, 95%);
+    }
+
+    .container,
+    .box
+    {
+        background-color: hsl(0, 0%, 95%);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .box
+    {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .box a
+    {
+        text-decoration: none;
+        color: inherit;
+    }
+
+
+    /*Card Sedan*/
+    .sedan
+    {
+        background-color: hsl(31, 77%, 52%);
+        width: 45%;
+        height: 20rem;
+        padding: 5rem;
+        border-top: 1px solid hsl(31, 77%, 52%);
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+    }
+
+    .sedan button
+    {
+        color: hsl(31, 77%, 52%);
+    }
+
+
+    /*Card SUV*/
+    .suv
+    {
+        background-color: hsl(184, 100%, 22%);
+        width: 45%;
+        height: 20rem;
+        padding: 5rem;
+    }
+
+    .suv button
+    {
+        color: hsl(184, 100%, 22%);
+    }
+
+
+    /*Card Luxury*/
+    .luxury
+    {
+        background-color: hsl(179, 100%, 13%);
+        width: 45%;
+        height: 20rem;
+        padding: 5rem;
+        border-top: 1px solid hsl(179, 100%, 13%);
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+
+    .luxury button
+    {
+        color: hsl(179, 100%, 13%);
+    }
+
+/*Padrão de todos os buttons: borda e background-color igual e efeito hover. Se tivesse mais coisas no site, criaria uma class para os botões.
+class="btn btn-<classificação - sedan, suv e luxury>"*/
+    button
+    {
+        margin-top: 35%;
+        border: 1px solid #FFFFFF;
+        border-radius: 3rem;
+        padding: 1rem 2rem;
+        cursor: pointer;
+    }
+
+    button:hover
+    {
+        background-color: inherit;
+        color: #fff;
+        border: 1px solid #fff;
+        box-shadow: inset 0 0 0 3px #fff;
+    }
+}
+
+@media (min-width: 1440px)
+{
+    .container,
+    .box
+    {
+        background-color: hsl(0, 0%, 95%);
+        width: 75%;
+        height: 10rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /*justify-content: center - não coloquei porque pareceu não estar centralizado -> ????*/
+        margin-top: 20%;
+    }
+
+    .sedan, 
+    .suv, 
+    .luxury
+    {
+        width: 45%;
+        height: 30rem;
+        padding: 5rem;
+        /*Não sei porque as bordas não zeraram. Não me pergunte.*/
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .sedan
+    {
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+    }
+
+    .sedan img, h2
+    {
+        margin-bottom: 2rem;
+    }
+
+    .suv img, h2
+    {
+        margin-bottom: 2rem;
+    }
+
+    .luxury img, h2
+    {
+        margin-bottom: 2rem;
+    }
+}
