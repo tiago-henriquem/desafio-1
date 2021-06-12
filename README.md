@@ -1,4 +1,4 @@
-# Desafio 1 - Frontend Mentor
+# Desafio 1 - Frontend Mentor - 3-column preview card component
 ![desktop-design](https://user-images.githubusercontent.com/66502092/121779119-7a167580-cb70-11eb-9276-0a162afb7ba4.jpg)
 (expected)
 
